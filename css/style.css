@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #2563eb; /* Blue */
+    --bg-color: #f3f4f6;
+    --text-color: #1f2937;
+    --card-bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--primary-color);
+    display: inline-block;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+/* Projects Section (Grid Layout) */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #e5e7eb;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1f2937;
+    color: white;
+    margin-top: 2rem;
+}
