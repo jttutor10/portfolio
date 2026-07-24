@@ -348,6 +348,12 @@ h2 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+.certifications-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
 /* Footer */
 footer {
     text-align: center;
